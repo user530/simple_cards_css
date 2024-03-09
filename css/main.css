@@ -140,6 +140,7 @@ main {
 
     .card p {
         margin-top: 1rem;
+        text-align: justify;
     }
 }
 
@@ -151,10 +152,12 @@ main {
 
     footer {
         font-size: 2rem;
+        padding-block: 0.5rem;
     }
 
     main {
         align-content: flex-start;
+        align-items: stretch;
     }
 
     .card {
@@ -174,5 +177,13 @@ main {
     .card p {
         margin-top: 1rem;
         font-size: 1.5rem;
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+    .card {
+        width: min(calc(33% - 1rem), 500px);
+        padding: 1.5rem;
     }
 }
