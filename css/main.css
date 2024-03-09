@@ -106,11 +106,40 @@ main {
 @media screen and (min-width: 576px) {
     main {
         justify-content: center;
-        flex-flow: row-reverse wrap-reverse;
+        flex-flow: column-reverse wrap-reverse;
         padding: 1rem;
     }
 
     .card {
         width: min(100%, 400px);
+    }
+}
+
+/* Medium */
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    .card {
+        width: min(100%, 325px);
+    }
+
+    .card figure {
+        flex-flow: column-reverse;
+    }
+
+    .card figcaption {
+        margin: 0.1em 0;
+    }
+
+    .card p {
+        margin-top: 1rem;
     }
 }
