@@ -116,7 +116,6 @@ main {
 }
 
 /* Medium */
-
 @media screen and (min-width: 768px) {
     nav {
         display: none;
@@ -141,5 +140,39 @@ main {
 
     .card p {
         margin-top: 1rem;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+    header {
+        font-size: 3rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+
+    main {
+        align-content: flex-start;
+    }
+
+    .card {
+        width: min(100%, 400px);
+    }
+
+    .card figure {
+        flex-flow: column;
+        gap: 1rem;
+    }
+
+    .card figcaption {
+        font-size: 3rem;
+        margin: 0.2em 0;
+    }
+
+    .card p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
     }
 }
